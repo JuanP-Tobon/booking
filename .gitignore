@@ -1,0 +1,14 @@
+/.idea
+/out
+/target
+/settings.gradle
+/.gradle
+target/
+build/
+history/
+bin/
+.classpath
+.project
+.settings/
+.idea/
+out/
