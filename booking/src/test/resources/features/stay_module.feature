@@ -20,7 +20,6 @@ Feature: Stay client module
       | Medellín    | 9 mayo 2022   | 15 mayo 2022 | 11               | 5        |
 
 
-  @this
   Scenario: Validate filters by price after search
     When He performs the search through the filters
       | destination | arriveDate    | returnDate   | adultsPassengers | bedrooms |

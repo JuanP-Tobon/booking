@@ -7,9 +7,10 @@ import org.junit.runner.RunWith;
 
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions(
-        features = "src/test/resources/features/stay_module.feature",
+        features = "src/test/resources/features/flight_module.feature",
         snippets = SnippetType.CAMELCASE,
         glue = "co.com.devco.automation.stepdefinitions"
 )
-public class StayModule {
+public class FlightModule {
+
 }

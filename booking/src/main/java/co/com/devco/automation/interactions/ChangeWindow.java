@@ -19,9 +19,9 @@ public class ChangeWindow implements Interaction {
     @Override
     public <T extends Actor> void performAs(T actor) {
         WebDriver driver = BrowseTheWeb.as(actor).getDriver();
-        Set<String> listaPantalla = driver.getWindowHandles();
-        for (String pantalla : listaPantalla) {
-            driver.switchTo().window(pantalla);
+        Set<String> screenList = driver.getWindowHandles();
+        for (String screen : screenList) {
+            driver.switchTo().window(screen);
             System.out.println(driver.getTitle());
             if (driver.getTitle().contains(tittle))
                 break;
