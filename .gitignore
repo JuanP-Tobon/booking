@@ -1,8 +1,8 @@
-/.idea
-/out
-/target
-/settings.gradle
-/.gradle
+booking/.idea
+booking/out
+booking/target
+booking/settings.gradle
+booking/.gradle
 target/
 build/
 history/
@@ -12,3 +12,4 @@ bin/
 .settings/
 .idea/
 out/
+.gradle/
