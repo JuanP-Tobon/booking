@@ -9,7 +9,9 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = "src/test/resources/features/stay_module.feature",
         snippets = SnippetType.CAMELCASE,
-        glue = "co.com.devco.automation.stepdefinitions"
+        glue = "co.com.devco.automation.stepdefinitions",
+        tags = "@this",
+        dryRun = true
 )
 public class StayModule {
 }

@@ -1,6 +1,8 @@
 package co.com.devco.automation.stepdefinitions;
 
+import co.com.devco.automation.questions.stays.ValidateReservation;
 import co.com.devco.automation.tasks.stays.FilterAndSearch;
+import co.com.devco.automation.tasks.stays.SelectReservation;
 import cucumber.api.DataTable;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
@@ -12,6 +14,8 @@ import net.serenitybdd.screenplay.actors.Cast;
 import net.serenitybdd.screenplay.actors.OnStage;
 import net.thucydides.core.annotations.Managed;
 import org.openqa.selenium.WebDriver;
+
+import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
 
 public class StayModuleStepDefinitions {
 
@@ -38,12 +42,22 @@ public class StayModuleStepDefinitions {
 
     @When("^He selects the stay$")
     public void heSelectsTheStay() {
-
+        OnStage.theActorInTheSpotlight().attemptsTo(SelectReservation.on());
     }
 
     @Then("^He should see that the stay has the correct data$")
-    public void heShouldSeeThatTheStayHasTheCorrectData() {
+    public void heShouldSeeThatTheStayHasTheCorrectData(DataTable dataTable) {
+        OnStage.theActorInTheSpotlight().should(seeThat(ValidateReservation.with(dataTable)));
+    }
 
+    @When("^He selects the lowest prices to filter$")
+    public void heSelectsTheLowestPricesToFilter() {
+
+    }
+
+    @Then("^He should see that the number of options is equal to the view in the filter$")
+    public void heShouldSeeThatTheNumberOfOptionsIsEqualToTheViewInTheFilter() {
+        
     }
 
 }
