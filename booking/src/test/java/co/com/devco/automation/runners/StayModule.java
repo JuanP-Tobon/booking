@@ -10,8 +10,7 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features/stay_module.feature",
         snippets = SnippetType.CAMELCASE,
         glue = "co.com.devco.automation.stepdefinitions",
-        tags = "@this",
-        dryRun = true
+        tags = "@this"
 )
 public class StayModule {
 }
