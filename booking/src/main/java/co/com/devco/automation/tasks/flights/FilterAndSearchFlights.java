@@ -35,6 +35,7 @@ public class FilterAndSearchFlights implements Task {
                 Click.on(FLIGHT_COMPONENT_BUTTON),
                 WaitUntil.the(ORIGIN_BUTTON, WebElementStateMatchers.isClickable()),
                 Click.on(ORIGIN_BUTTON),
+                Enter.theValue(origin).into(ORIGIN_FILTER_FIELD),
                 Enter.theValue(origin).into(ORIGIN_FILTER_FIELD).thenHit(Keys.TAB),
                 WaitUntil.the(DESTINATION_BUTTON, WebElementStateMatchers.isClickable()),
                 Click.on(DESTINATION_BUTTON),
