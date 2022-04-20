@@ -45,8 +45,6 @@ public class FilterAndSearchFlights implements Task {
                 Click.on(DATE_BUTTON.of(returnDate)),
                 Click.on(SEARCH_BUTTON)
         );
-
-
     }
 
     public static FilterAndSearchFlights with(DataTable dataTable) {
