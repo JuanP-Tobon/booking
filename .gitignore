@@ -3,6 +3,11 @@ booking/out
 booking/target
 booking/settings.gradle
 booking/.gradle
+booking_manual/.idea
+booking_manual/out
+booking_manual/target
+booking_manual/settings.gradle
+booking_manual/.gradle
 target/
 build/
 history/
