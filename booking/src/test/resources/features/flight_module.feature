@@ -5,6 +5,7 @@ Feature: Flight purchase module
   Background:
     Given The user enters the main page
 
+
   Scenario: Check the best flight
     When the user enters the flight component and filters the desired characteristics
       | origin   | destination | departureDate | returnDate |
