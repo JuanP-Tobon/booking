@@ -1,0 +1,30 @@
+
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath("net.serenity-bdd:serenity-gradle-plugin:2.0.81")
+    }
+}
+plugins {
+    id 'java'
+}
+
+group 'co.com.devco.manualtest'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.assertj:assertj-core:3.8.0'
+    implementation 'org.slf4j:slf4j-simple:1.7.36'
+    implementation group: 'junit', name: 'junit', version: '3.8.1'
+    implementation 'net.serenity-bdd:serenity-cucumber:1.9.45'
+    implementation 'net.serenity-bdd:serenity-core:2.0.81'
+    implementation 'net.serenity-bdd:serenity-junit:2.0.81'
+}
