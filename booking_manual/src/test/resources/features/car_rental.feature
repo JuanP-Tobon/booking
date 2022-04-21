@@ -50,3 +50,9 @@ Feature: Car rental Component
     When He fills the filters by starting point and dates
     And He uses the price filter module
     Then He should see that the car list prices are between the filtered ranges
+
+  @manual
+  Scenario: Filter cars by customer rating
+    Given The user enters the page and accesses the vehicle rental component
+    When He performs the filtering by the rating of the car
+    Then He should see that only those of the selected rating appear in the list of cars
