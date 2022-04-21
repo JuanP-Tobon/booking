@@ -16,9 +16,6 @@ public class ValidateQuantityStaysFiltered implements Question<Boolean> {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        System.out.println(Text.of(StaysFoundPage.QUANTITY_STAYS_SEARCHING).viewedBy(actor).asString());
-        String ss = actor.recall("quantityStays");
-        System.out.println("Quantity Before Select Low Price:" + ss);
         return Text.of(StaysFoundPage.QUANTITY_STAYS_SEARCHING).viewedBy(actor).asString().contains(actor.recall("quantityStays"));
     }
 
